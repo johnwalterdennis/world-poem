@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Expandable Grid Panels - Old Paper Theme (Rectangular Panels)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Poems</h1>
+  </header>
+  <div class="grid">
+    <!-- Example panel with audio and marked-up poem lines -->
+    <div class="panel" data-audio="audio/road_not_taken.mp3">
+      <h2>Poem: The Road Not Taken</h2>
+      <!-- Wrap each line in a span with timing info -->
+      <div class="poem-text">
+        <span class="line" data-start="0" data-end="4">Two roads diverged in a yellow wood,</span><br>
+        <span class="line" data-start="4" data-end="8">And sorry I could not travel both,</span><br>
+        <span class="line" data-start="8" data-end="12">And be one traveler, long I stood</span><br>
+        <span class="line" data-start="12" data-end="16">And looked down one as far as I could</span>
+      </div>
+    </div>
+    <!-- Other panels remain similar (you could update them similarly if needed) -->
+    <div class="panel" data-audio="audio/inspiration.mp3">
+      <h2>Daily Note: Inspiration</h2>
+      <p class="preview">
+        "Believe you can and you're halfway there." - Theodore Roosevelt.
+      </p>
+    </div>
+    <div class="panel" data-audio="audio/dawn.mp3">
+      <h2>Short Poem: Dawn</h2>
+      <p class="preview">
+        The sun peeks over hills, casting a golden promise of a new day.
+      </p>
+    </div>
+    <div class="panel" data-audio="audio/autumn_leaves.mp3">
+      <h2>Ode: Autumn Leaves</h2>
+      <p class="preview">
+        Autumn leaves fall gracefully, painting the ground in shades of orange and red.
+      </p>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
